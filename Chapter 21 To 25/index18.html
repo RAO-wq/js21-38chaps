@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ 
+var text = "The quick brown fox jumps over the lazy dog";
+
+document.write("TEXT : "+text)
+function count(main_str, sub_str) 
+    {
+    main_str += '';
+    sub_str += '';
+
+    if (sub_str.length <= 0) 
+    {
+        return main_str.length + 1;
+    }
+
+       subStr = sub_str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+       return (main_str.match(new RegExp(subStr, 'gi')) || []).length;
+    }
+ 
+var amount = (count("The quick brown fox jumps over the lazy dog", 'the'));
+
+document.write ("<br> THE AMOUNT OF THE IS : "+amount);
+    </script>
+</body>
+</html>

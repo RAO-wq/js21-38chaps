@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+<body>
+    <script>
+       
+var curday = function(sp){
+today = new Date();
+var dd = today.getDate();
+
+
+if(dd<10) dd='0'+dd;
+return (dd);
+};
+var day = document.write("DATE OF TODAY IS : "+curday()+"<BR>");
+
+if (day < 16){
+    document.write("First fifteen days of the month..");
+}
+else{
+    document.write("Last Days Of The Month...");
+}
+    </script>
+</body>
+</html>

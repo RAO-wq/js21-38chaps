@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+</head>
+<body>
+    <script>
+       
+function Calculator(){
+    var pehla = prompt("ENTER THE FIRST NUMBER...");
+    var dosra = prompt("ENTER THE SECOND NUMBER...");
+    var char = prompt("ENTER THE OPERATOR TO PERFORM...");
+
+    switch (char){
+
+    case '+':
+        var add = ((+pehla)+(+dosra));
+
+        document.write("THE ADDITIN OF "+pehla+" AND "+dosra+" IS "+add);
+        break;
+
+    case '-':
+        var sub = pehla - dosra;
+        
+        document.write("THE SUBTRACTION OF "+pehla+" AND "+dosra+" IS "+sub);
+        break;
+
+    case '*':
+        var mul = pehla * dosra;
+        
+        document.write("THE MULTIPLICATION OF "+pehla+" AND "+dosra+" IS "+mul);
+        break;
+
+    case '/':
+        var div = pehla / dosra;
+        
+        document.write("THE DIVISION OF "+pehla+" AND "+dosra+" IS "+div);
+        break;
+
+}}
+
+Calculator();
+
+    </script>
+</body>
+</html>

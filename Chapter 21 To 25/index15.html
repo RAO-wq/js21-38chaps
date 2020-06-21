@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+var password = prompt("ENTER THE PASSWORD...");
+
+if (password.length < 5){
+    document.write("PASSWORD MUST BE AT LEAST 6 CHARACTERS LONG...");
+}
+else if (password >= 'a'  &&  password <= 'z' ){
+    document.write (password);
+}
+else if (password >= 'A'  &&  password <= 'Z' ){
+    document.write (password);
+}else  {
+  document.write("PLEASE ENTER A VALID PASSWORD...");
+}
+
+
+
+
+    </script>
+</body>
+</html>
